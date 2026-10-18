@@ -22,7 +22,7 @@
 <link rel="apple-touch-icon" href="img/favicon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
 <style>
 :root{
   --navy:#0E1B3D; --ink:#16233A; --muted:#4A5468; --line:#ECE7DF;
@@ -448,6 +448,85 @@ footer{background:var(--ink);color:var(--soft)}
 @media (prefers-reduced-motion:reduce){ .cpage{animation:none} }
 
 .copy{overflow:visible}
+
+/* ===== Conceptos: tres tiendas con diseño propio ===== */
+.cpage img{display:block;width:100%;height:100%;object-fit:cover}
+/* Moda: editorial blanco y negro */
+.k-moda{background:#fff;color:#111;font-family:'DM Sans',sans-serif}
+.m-nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:12px 14px;font-size:10px;letter-spacing:.04em}
+.m-nav span:last-child{text-align:right}
+.m-nav b{font-family:'Playfair Display',Georgia,serif;font-size:20px;letter-spacing:.32em;font-weight:700}
+.m-hero{position:relative;height:210px;overflow:hidden}
+.m-hero img{filter:grayscale(1) contrast(1.05)}
+.m-hero-t{position:absolute;left:14px;bottom:14px;color:#fff;display:flex;flex-direction:column;gap:4px}
+.m-hero-t em{font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:13px}
+.m-hero-t strong{font-family:'Playfair Display',Georgia,serif;font-size:34px;line-height:.95;font-weight:700;text-shadow:0 1px 12px rgba(0,0,0,.35)}
+.m-hero-t span{font-size:11px;font-weight:700;border-bottom:1px solid #fff;align-self:flex-start;margin-top:4px}
+.m-strip{background:#111;color:#fff;font-size:10px;padding:8px 14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.m-row{display:grid;grid-template-columns:1.1fr 1fr;gap:8px;padding:14px}
+.m-col{display:flex;flex-direction:column;gap:8px}
+.m-p{display:flex;flex-direction:column;gap:2px;font-size:11px}
+.m-p img{height:96px}
+.m-p--tall img{height:230px}
+.m-p b{font-weight:500;color:#555}
+.m-quote{padding:18px 14px;text-align:center;font-family:'Playfair Display',Georgia,serif;font-size:17px;line-height:1.2;border-block:1px solid #111;margin:0 14px}
+.m-sizes{display:flex;gap:6px;align-items:center;padding:16px 14px;font-size:11px}
+.m-sizes span{margin-right:4px;font-weight:700}
+.m-sizes i{font-style:normal;width:30px;height:30px;display:grid;place-items:center;border:1px solid #111;font-size:10px}
+.m-sizes i.on{background:#111;color:#fff}
+.m-foot{display:flex;justify-content:space-between;align-items:center;padding:16px 14px 20px;font-size:9px;color:#666}
+.m-foot b{font-family:'Playfair Display',Georgia,serif;letter-spacing:.3em;color:#111;font-size:13px}
+
+/* Belleza: suave, redondeado, verde salvia */
+.k-bel{background:#F4F1EA;color:#2C3A2F;font-family:'DM Sans',sans-serif}
+.b-nav{display:flex;justify-content:space-between;align-items:center;padding:14px 16px}
+.b-nav b{font-size:22px;font-weight:500;letter-spacing:-.04em}
+.b-pill{font-size:10px;background:#fff;border-radius:999px;padding:5px 10px}
+.b-hero{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;padding:4px 18px 18px}
+.b-arch{width:150px;height:180px;border-radius:999px 999px 18px 18px;overflow:hidden;background:#DCE5D5}
+.b-hero strong{font-size:20px;line-height:1.1;font-weight:500;letter-spacing:-.02em;max-width:14ch}
+.b-chips{display:flex;gap:5px;flex-wrap:wrap;justify-content:center}
+.b-chips span{font-size:9.5px;background:#DCE5D5;border-radius:999px;padding:4px 9px}
+.b-hero em{font-style:normal;font-size:11px;font-weight:700;background:#2C3A2F;color:#fff;border-radius:999px;padding:8px 16px}
+.b-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:0 14px 14px}
+.b-steps span{background:#fff;border-radius:14px;padding:10px 6px;font-size:10px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:4px}
+.b-steps b{width:20px;height:20px;border-radius:50%;background:#9DB59A;color:#fff;display:grid;place-items:center;font-size:10px}
+.b-list{display:flex;flex-direction:column;gap:8px;padding:0 14px}
+.b-item{display:grid;grid-template-columns:52px 1fr auto;gap:10px;align-items:center;background:#fff;border-radius:16px;padding:8px;font-size:11px}
+.b-item img{height:52px;border-radius:12px}
+.b-item small{display:block;color:#7A8A7C;font-size:9.5px}
+.b-item b{font-weight:700}
+.b-sub{margin:14px;border-radius:18px;background:#9DB59A;color:#fff;padding:16px;display:flex;flex-direction:column;gap:2px;font-size:10.5px}
+.b-sub b{font-size:14px}
+.b-foot{padding:4px 16px 18px;font-size:9px;color:#7A8A7C}
+
+/* Café: oscuro, tipografía condensada y contundente */
+.k-cafe{background:#1E120B;color:#F3E6D3;font-family:'DM Sans',sans-serif}
+.c-nav{display:flex;justify-content:space-between;align-items:center;padding:14px 16px}
+.c-nav b{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:13px;line-height:.9;letter-spacing:.02em}
+.c-nav span{font-size:16px}
+.c-hero{position:relative;display:grid;grid-template-columns:1fr 1fr;align-items:end;gap:8px;padding:6px 16px 14px}
+.c-hero strong{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:40px;line-height:.85;letter-spacing:-.04em;color:#F2A65A}
+.c-hero strong span{display:block;color:#F3E6D3;font-size:30px;margin-top:6px}
+.c-hero strong small{display:block;font-size:10px;letter-spacing:.08em;color:#BFA88E;font-weight:500;margin-top:2px}
+.c-hero img{height:170px;border-radius:4px}
+.c-notes{display:flex;gap:6px;padding:0 16px 14px}
+.c-notes span{font-size:10px;border:1px solid #6B4A33;border-radius:4px;padding:4px 8px}
+.c-buy{margin:0 16px;background:#2C1B11;border-radius:6px;padding:12px;display:flex;flex-direction:column;gap:10px}
+.c-opt{display:flex;justify-content:space-between;align-items:center;font-size:10px;color:#BFA88E}
+.c-opt div{display:flex;gap:4px}
+.c-opt i{font-style:normal;padding:4px 8px;border-radius:4px;background:#3A2517;color:#F3E6D3}
+.c-opt i.on{background:#F2A65A;color:#1E120B;font-weight:700}
+.c-price{display:flex;justify-content:space-between;align-items:center}
+.c-price b{font-family:'Bricolage Grotesque',sans-serif;font-size:20px}
+.c-price em{font-style:normal;font-size:11px;font-weight:700;background:#F2A65A;color:#1E120B;border-radius:4px;padding:8px 14px}
+.c-origins{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:16px}
+.c-origins div{display:flex;flex-direction:column;gap:2px;font-size:10.5px}
+.c-origins img{height:84px;border-radius:4px}
+.c-origins small{color:#BFA88E;font-size:9px}
+.c-sub{margin:0 16px;border-top:2px solid #F2A65A;padding:12px 0;display:flex;flex-direction:column;gap:2px;font-size:10px;color:#BFA88E}
+.c-sub b{font-family:'Bricolage Grotesque',sans-serif;font-size:18px;color:#F3E6D3;letter-spacing:.02em}
+.c-foot{padding:8px 16px 18px;font-size:9px;color:#8C735C}
 </style>
 </head>
 <body>
@@ -605,54 +684,75 @@ footer{background:var(--ink);color:var(--soft)}
     <div class="concepts stagger">
       <article class="concept rv">
         <div class="cframe"><div class="cbar"><i></i><i></i><i></i><span>moracolombia.co</span></div>
-          <div class="cview"><div class="cpage c-moda">
-            <div class="cnav"><b>MORA</b><span>Mujer · Hombre · Carrito</span></div>
-            <div class="chero"><small>NUEVA COLECCIÓN</small><strong>Hecho en Medellín,<br>pensado para ti</strong><em>Ver colección</em></div>
-            <div class="cgrid">
-              <div class="cprod"><div class="im"><img src="img/buzo.jpg" alt="" loading="lazy"></div><span>Buzo oversize</span><b>$129.900</b></div>
-              <div class="cprod"><div class="im"><img src="img/camisa.jpg" alt="" loading="lazy"></div><span>Camisa lino</span><b>$99.900</b></div>
-              <div class="cprod"><div class="im"><img src="img/pantalon.jpg" alt="" loading="lazy"></div><span>Pantalón lino</span><b>$149.900</b></div>
-              <div class="cprod"><div class="im"><img src="img/bolso.jpg" alt="" loading="lazy"></div><span>Bolso cuero</span><b>$189.900</b></div>
+          <div class="cview"><div class="cpage k-moda">
+            <div class="m-nav"><span>Mujer&nbsp;&nbsp;Hombre</span><b>MORA</b><span>Bolsa (2)</span></div>
+            <div class="m-hero">
+              <img src="img/camisa.jpg" alt="" loading="lazy">
+              <div class="m-hero-t"><em>Colección</em><strong>Lino<br>de Medellín</strong><span>Ver todo →</span></div>
             </div>
-            <div class="cband"><b>Envío gratis desde $200.000</b><span>Paga con Nequi o PSE</span></div>
-            <div class="cfoot">© Mora · Marca ficticia</div>
+            <div class="m-strip">Envío gratis desde $200.000 — Paga con Nequi o PSE — Cambios en 30 días</div>
+            <div class="m-row">
+              <div class="m-p m-p--tall"><img src="img/pantalon.jpg" alt="" loading="lazy"><span>Pantalón lino</span><b>$149.900</b></div>
+              <div class="m-col">
+                <div class="m-p"><img src="img/buzo.jpg" alt="" loading="lazy"><span>Buzo oversize</span><b>$129.900</b></div>
+                <div class="m-p"><img src="img/bolso.jpg" alt="" loading="lazy"><span>Bolso cuero</span><b>$189.900</b></div>
+              </div>
+            </div>
+            <div class="m-quote"><em>“Prendas que duran más que la temporada.”</em></div>
+            <div class="m-sizes"><span>Talla</span><i>XS</i><i>S</i><i class="on">M</i><i>L</i><i>XL</i></div>
+            <div class="m-foot"><b>MORA</b><span>© Mora · Marca ficticia</span></div>
           </div></div>
         </div>
-        <div class="cmeta"><div><h3>Moda y accesorios</h3><p>Catálogo visual, tallas y envíos nacionales.</p></div><span class="tag">Concepto</span></div>
+        <div class="cmeta"><div><h3>Moda y accesorios</h3><p>Editorial, en blanco y negro, fotos grandes y selector de tallas.</p></div><span class="tag">Concepto</span></div>
       </article>
+
       <article class="concept rv">
         <div class="cframe"><div class="cbar"><i></i><i></i><i></i><span>raiznatural.co</span></div>
-          <div class="cview"><div class="cpage c-bel">
-            <div class="cnav"><b>Raíz</b><span>Rostro · Cuerpo · Carrito</span></div>
-            <div class="chero"><div class="circ" style="width:160px;height:160px;background:#fff;right:-40px;top:-50px"></div><small>CUIDADO NATURAL</small><strong>Tu rutina con<br>ingredientes locales</strong><em>Comprar ahora</em></div>
-            <div class="cgrid">
-              <div class="cprod"><div class="im"><img src="img/serum.jpg" alt="" loading="lazy"></div><span>Sérum vitamina C</span><b>$89.900</b></div>
-              <div class="cprod"><div class="im"><img src="img/crema.jpg" alt="" loading="lazy"></div><span>Crema hidratante</span><b>$64.900</b></div>
-              <div class="cprod"><div class="im"><img src="img/tonico.jpg" alt="" loading="lazy"></div><span>Tónico facial</span><b>$54.900</b></div>
-              <div class="cprod"><div class="im"><img src="img/mascarilla.jpg" alt="" loading="lazy"></div><span>Mascarilla facial</span><b>$69.900</b></div>
+          <div class="cview"><div class="cpage k-bel">
+            <div class="b-nav"><b>raíz</b><span class="b-pill">Carrito · 1</span></div>
+            <div class="b-hero">
+              <div class="b-arch"><img src="img/serum.jpg" alt="" loading="lazy"></div>
+              <strong>Piel feliz con ingredientes de aquí</strong>
+              <div class="b-chips"><span>Café de Caldas</span><span>Aloe</span><span>Sin parabenos</span></div>
+              <em>Haz tu test de piel</em>
             </div>
-            <div class="cband"><b>Arma tu rutina en 3 pasos</b><span>Asesoría gratis</span></div>
-            <div class="cfoot">© Raíz · Marca ficticia</div>
+            <div class="b-steps"><span><b>1</b>Limpia</span><span><b>2</b>Tonifica</span><span><b>3</b>Hidrata</span></div>
+            <div class="b-list">
+              <div class="b-item"><img src="img/tonico.jpg" alt="" loading="lazy"><div><span>Tónico facial</span><small>Paso 2 · 120 ml</small></div><b>$54.900</b></div>
+              <div class="b-item"><img src="img/crema.jpg" alt="" loading="lazy"><div><span>Crema hidratante</span><small>Paso 3 · 50 g</small></div><b>$64.900</b></div>
+              <div class="b-item"><img src="img/mascarilla.jpg" alt="" loading="lazy"><div><span>Mascarilla facial</span><small>1 vez por semana</small></div><b>$69.900</b></div>
+            </div>
+            <div class="b-sub"><b>Suscríbete y ahorra 15%</b><span>Tu rutina llega cada mes a tu casa</span></div>
+            <div class="b-foot">© Raíz · Marca ficticia</div>
           </div></div>
         </div>
-        <div class="cmeta"><div><h3>Belleza y cuidado</h3><p>Rutinas, kits y suscripciones mensuales.</p></div><span class="tag">Concepto</span></div>
+        <div class="cmeta"><div><h3>Belleza y cuidado</h3><p>Suave y redondeado: rutina por pasos, ingredientes y suscripción.</p></div><span class="tag">Concepto</span></div>
       </article>
+
       <article class="concept rv">
         <div class="cframe"><div class="cbar"><i></i><i></i><i></i><span>tostadoorigen.co</span></div>
-          <div class="cview"><div class="cpage c-cafe">
-            <div class="cnav"><b>Tostado Origen</b><span>Cafés · Métodos · Carrito</span></div>
-            <div class="chero"><div class="circ" style="width:180px;height:180px;background:#F2A65A;right:-60px;bottom:-70px"></div><small>CAFÉ DE ESPECIALIDAD</small><strong>Del Huila y el Quindío<br>a tu taza</strong><em>Suscríbete</em></div>
-            <div class="cgrid">
-              <div class="cprod"><div class="im"><img src="img/cafe.jpg" alt="" loading="lazy"></div><span>Huila 500 g</span><b>$42.900</b></div>
-              <div class="cprod"><div class="im"><img src="img/cafe2.jpg" alt="" loading="lazy"></div><span>Quindío 500 g</span><b>$45.900</b></div>
-              <div class="cprod"><div class="im"><img src="img/gotero.jpg" alt="" loading="lazy"></div><span>Gotero de barro</span><b>$89.900</b></div>
-              <div class="cprod"><div class="im"><img src="img/taza.jpg" alt="" loading="lazy"></div><span>Taza y plato</span><b>$49.900</b></div>
+          <div class="cview"><div class="cpage k-cafe">
+            <div class="c-nav"><b>TOSTADO<br>ORIGEN</b><span>☰</span></div>
+            <div class="c-hero">
+              <strong>HUILA<br><span>1.850</span><small>m.s.n.m.</small></strong>
+              <img src="img/cafe.jpg" alt="" loading="lazy">
             </div>
-            <div class="cband"><b>Suscripción mensual -15%</b><span>Recíbelo cada mes</span></div>
-            <div class="cfoot">© Tostado Origen · Marca ficticia</div>
+            <div class="c-notes"><span>Panela</span><span>Durazno</span><span>Cacao</span></div>
+            <div class="c-buy">
+              <div class="c-opt"><span>Molienda</span><div><i class="on">Grano</i><i>Media</i><i>Fina</i></div></div>
+              <div class="c-opt"><span>Tamaño</span><div><i>250 g</i><i class="on">500 g</i></div></div>
+              <div class="c-price"><b>$42.900</b><em>Agregar</em></div>
+            </div>
+            <div class="c-origins">
+              <div><img src="img/cafe2.jpg" alt="" loading="lazy"><b>Quindío</b><small>1.600 m · Lavado</small></div>
+              <div><img src="img/gotero.jpg" alt="" loading="lazy"><b>Gotero</b><small>Barro · $89.900</small></div>
+              <div><img src="img/taza.jpg" alt="" loading="lazy"><b>Taza</b><small>Cerámica · $49.900</small></div>
+            </div>
+            <div class="c-sub"><b>CLUB DEL CAFÉ</b><span>Un origen distinto cada mes · -15%</span></div>
+            <div class="c-foot">© Tostado Origen · Marca ficticia</div>
           </div></div>
         </div>
-        <div class="cmeta"><div><h3>Café y alimentos</h3><p>Suscripciones, regalos y ventas recurrentes.</p></div><span class="tag">Concepto</span></div>
+        <div class="cmeta"><div><h3>Café y alimentos</h3><p>Oscuro y contundente: origen, notas de sabor y compra en un toque.</p></div><span class="tag">Concepto</span></div>
       </article>
     </div>
     <p class="note">Marcas ficticias que creamos como ejemplo de estilo.</p>
