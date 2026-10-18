@@ -13,6 +13,13 @@
 - La cuenta, el dominio y el contenido quedan a nombre del cliente
 - Precios: cotización a la medida
 
+## Ciudades
+Atendemos negocios en toda Colombia, con páginas dedicadas para:
+- Pereira: https://globalclick.github.io/diseno-paginas-web-pereira/
+- Dosquebradas: https://globalclick.github.io/diseno-paginas-web-dosquebradas/
+- Santa Rosa de Cabal: https://globalclick.github.io/diseno-paginas-web-santa-rosa-de-cabal/
+También Bogotá, Medellín, Cali, Barranquilla, Cartagena, Bucaramanga y Manizales.
+
 ## Contacto
 - WhatsApp: +57 319 278 4114 (https://wa.me/573192784114)
 - Correo: globalclickecom@gmail.com
