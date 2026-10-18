@@ -258,6 +258,8 @@ footer{background:var(--ink);color:var(--soft)}
 /* Cursor glow (desktop) */
 .glow{position:fixed;width:420px;height:420px;border-radius:50%;pointer-events:none;background:radial-gradient(circle,rgba(255,107,53,.10),transparent 60%);transform:translate(-50%,-50%);z-index:0;transition:opacity .3s;opacity:0}
 
+@media (max-width:1100px){.links{gap:18px}}
+@media (max-width:980px){.links a:not(.btn){display:none}}
 @media (max-width:900px){
   .steps{grid-template-columns:1fr 1fr}
   .steps-line{display:none}
@@ -898,7 +900,7 @@ footer{background:var(--ink);color:var(--soft)}
     <div style="display:flex;flex-direction:column;gap:6px">
       <span class="brand" style="color:#fff"><svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><circle cx="30" cy="30" r="12.5" fill="none" stroke="#fff" stroke-width="2.8"/><ellipse cx="30" cy="30" rx="5.2" ry="12.5" fill="none" stroke="#fff" stroke-width="2.8"/><path d="M17.5 30h25" stroke="#fff" stroke-width="2.8"/><path d="M35.6 33.2 L46.4 41.2 L41.2 42 L44.2 47.6 L41.8 48.8 L38.8 43.2 L35.6 46.8 Z" fill="#FF6B35"/></svg>Globalclick</span>
       <span>Agencia de E-commerce · Colombia</span>
-      <span style="max-width:420px;font-size:14px">Globalclick diseña páginas web y tiendas virtuales en Shopify para pymes de todo el país, con pagos por PSE, Nequi y tarjeta, y envíos a todo el país.</span>
+      <span style="max-width:420px;font-size:14px">Globalclick diseña páginas web y tiendas virtuales en Shopify para pymes de todo el país, con pagos por PSE, Nequi y tarjeta, y envíos nacionales.</span>
       <span>Partners de Shopify</span>
     </div>
     <div style="display:flex;flex-direction:column;gap:6px">
