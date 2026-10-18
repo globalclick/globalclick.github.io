@@ -1,6 +1,6 @@
 # Globalclick - Agencia de E-commerce
 
-> Globalclick es una agencia de e-commerce con sede en Pereira (Risaralda, Colombia), Partner de Shopify, que diseña páginas web y tiendas virtuales en Shopify para pequeños y medianos negocios que aún no venden en línea o que necesitan un rediseño personalizado.
+> Globalclick es una agencia de e-commerce en Colombia, Partner de Shopify, que diseña páginas web y tiendas virtuales en Shopify para pequeños y medianos negocios que aún no venden en línea o que necesitan un rediseño personalizado.
 
 ## Servicios
 - Tienda virtual nueva en Shopify: diseño con la marca del cliente, carga de hasta 20 productos, pagos con Wompi o Mercado Pago (PSE, Nequi, tarjeta), envíos configurados y capacitación. Lista en máximo 1 semana.
@@ -8,8 +8,7 @@
 - Mantenimiento mensual: 5 horas de cambios al mes, carga de productos, banners de temporada y soporte por WhatsApp.
 
 ## Datos clave
-- Ubicación: Pereira, Risaralda, Colombia
-- Cobertura: Pereira, Eje Cafetero y toda Colombia (trabajo remoto)
+- Cobertura: toda Colombia (trabajo 100% remoto)
 - Primera asesoría: gratis y sin compromiso
 - La cuenta, el dominio y el contenido quedan a nombre del cliente
 - Precios: cotización a la medida
